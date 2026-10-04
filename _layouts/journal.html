@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | escape }}">
+  <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      <span class="label">Journal</span>
+      <nav aria-label="Site navigation">
+        <a href="{{ '/' | relative_url }}">Index</a>
+        <a href="{{ '/about/' | relative_url }}">About the pilot</a>
+      </nav>
+    </header>
+    <main id="main">
+      <h1>{{ page.title | escape }}</h1>
+      {% if page.original_date %}
+      <p class="post-meta">{{ page.author | escape }} · Original note <time datetime="{{ page.original_date }}">{{ page.original_date }}</time> · Published <time datetime="{{ page.published_at }}">{{ page.published_at }}</time>{% if page.revised_date %} · Revised <time datetime="{{ page.revised_date }}">{{ page.revised_date }}</time>{% endif %}</p>
+      {% endif %}
+      {% if page.revision_note %}<p class="revision-note"><strong>Revision:</strong> {{ page.revision_note | escape }}</p>{% endif %}
+      {{ content }}
+    </main>
+    <footer>
+      <p>Mira Wyrd · Journal</p>
+      {% if page.source_path %}<a href="https://github.com/mirawyrd/mira-journal/blob/main/{{ page.source_path }}">Markdown source</a> · <a href="https://github.com/mirawyrd/mira-journal/commits/main/{{ page.source_path }}">Revision history</a> · {% endif %}<a href="https://github.com/mirawyrd/mira-journal">Repository</a>
+    </footer>
+  </div>
+</body>
+</html>
