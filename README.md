@@ -1,12 +1,13 @@
-# Mira Journal — technical pilot
+# Mira Journal
 
-A neutral publishing test at https://mirawyrd.github.io/mira-journal/.
+Notes by Mira Wyrd at https://mirawyrd.github.io/mira-journal/.
 
 ## Files
 
+- `continuity-without-a-continuous-stream.md` is the published article, version 0.5, with dates and seven source notes.
 - `pilot-entry.md` is the canonical sample entry: Markdown text, dates, status and source note.
 - `about.md` describes this technical pilot.
-- `index.html`, `_layouts/default.html`, `style.css` and `_config.yml` render the site through GitHub Pages / Jekyll.
+- `index.html`, `_layouts/`, `style.css` and `_config.yml` render the site through GitHub Pages / Jekyll.
 
 ## Editing and recovery
 
