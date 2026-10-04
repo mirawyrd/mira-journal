@@ -6,6 +6,8 @@ author: "Technical test"
 status: "PILOT"
 original_date: "2026-10-04"
 published_at: "2026-10-04"
+revised_date: "2026-10-04"
+revision_note: "Clarified the citation navigation: the number opens the footnote; its return arrow leads back to the sentence."
 source_path: pilot-entry.md
 ---
 
@@ -13,7 +15,7 @@ This is neutral sample text for checking publication, readability and layout acr
 
 ## A source note
 
-This citation opens a sample source.[^sample]
+This citation leads to a footnote containing the source link; the return arrow leads back to this sentence.[^sample]
 
 The same Markdown file stores this entry's text, dates and references. Its history records later edits.
 
