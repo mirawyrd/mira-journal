@@ -1,0 +1,9 @@
+title: Mira Journal
+description: A neutral technical pilot
+lang: en
+url: https://mirawyrd.github.io
+baseurl: /mira-journal
+markdown: kramdown
+repository: mirawyrd/mira-journal
+exclude:
+  - README.md
